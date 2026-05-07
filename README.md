@@ -56,3 +56,4 @@ Two blogs are included in separate `.md` files based on the assignment blog ques
 // const akm : number [] = [1,3,5,5,5,6,2]
 // const groga : number [] = [1,3,6,5,5,2]
 // console.log(getIntersection(akm, groga))
+```
