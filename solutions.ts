@@ -1,6 +1,4 @@
 
-/// 1 
-
 const filterEvenNumbers = (test : number[]) : number[] => {
      const filterdArray:number[] = []
 
@@ -11,11 +9,9 @@ const filterEvenNumbers = (test : number[]) : number[] => {
      })
      return filterdArray
 }
-// const akm : number[] = [1,2,3]
-// console.log(filterEvenNumbers(akm))
 
 
-/// 2 
+
 
 const reverseString = (param : string) : string => {
     let temporaryReversed : string = ''
@@ -23,13 +19,11 @@ const reverseString = (param : string) : string => {
     for(let i = param.length - 1; i >= 0; i--) {
        temporaryReversed += (param[i])
     }
-     
+
     return temporaryReversed
 }
-// const akm : string = 'meowmenow'
-// console.log(reverseString(akm))
 
-// 3
+
 
 type StringOrNumber = string | number
 const checkType = (param : StringOrNumber) : string => {
@@ -41,20 +35,13 @@ const checkType = (param : StringOrNumber) : string => {
         return 'Number'
     }
 }
-// console.log(checkType("Hello"))
-// console.log(checkType(42))
 
 
-/// 4
 
 const getProperty = <X, Y extends keyof X> (inObj : X, key : keyof X) => {
     return inObj[key]
 }
-// const user = { id: 1, name: "John Doe", age: 21 } 
-// console.log(getProperty(user, "name"))
 
-
-/// 5
 
 interface Book {
     title : string
@@ -69,12 +56,7 @@ const toggleReadStatus = (obj : Book) : object => {
     }
 }
 
-// const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
-// console.log(toggleReadStatus(myBook));
 
-
-
-/// 6
 
 class Person {
     name : string;
@@ -98,11 +80,6 @@ class Student extends Person{
     }
 }
 
-// const student = new Student("Alice", 20, "A");
-// console.log(student.getDetails());
-
-
-/// 7
 
 const getIntersection = (arr1 : number[] , arr2 : number[]) : number[] => {
     
@@ -116,6 +93,3 @@ const getIntersection = (arr1 : number[] , arr2 : number[]) : number[] => {
     }
     return[...commonElement]
 }
-// const akm : number [] = [1,3,5,5,5,6,2]
-// const groga : number [] = [1,3,6,5,5,2]
-// console.log(getIntersection(akm, groga))
