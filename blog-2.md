@@ -1,6 +1,4 @@
 
----
-
 # `blog-2.md`
 
 ```md
@@ -16,7 +14,7 @@ To solve this problem, TypeScript introduces `unknown`, which is a safer alterna
 
 Type narrwoing is a state where we narrow or specify the type using if block so that the compiler can easily recommand related fucntion of that type.
 
----
+
 
 ### Why `any` is called a "Type Safety Hole"
 
@@ -39,7 +37,7 @@ data.toUpperCase(); // Runtime error
                   // Typescript interpreter don't give any warning 
                 // so it can cause serious issue in big project
 ```
----
+
 
 ### Why unknown is Safer
 

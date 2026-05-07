@@ -1,6 +1,4 @@
 
----
-
 # `blog-1.md`
 
 ```md
@@ -13,7 +11,7 @@ How do Generics allow you to build reusable components and functions that stay s
 
 Generics is a powerful feature in TypeScript language. It allows the developers to build reusable functions, classes, and interfaces while maintaining strict type safety. Instead of writing duplicate same type of fucntion we can generalize the fucntion code for different data types. Generics enable scalable solutions.
 
----
+
 
 ## Problem Without Generics
 
@@ -30,7 +28,7 @@ function identityString(value: string): string {
   return value;
 }
 ```
----
+
 
 ### Solution of problem 1 :
 
@@ -82,7 +80,6 @@ const user2List : GenericArray<User2> = [
 ]
 ```
 
----
 
 ### Conclusion
 
