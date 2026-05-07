@@ -104,3 +104,18 @@ class Student extends Person{
 
 /// 7
 
+const getIntersection = (arr1 : number[] , arr2 : number[]) : number[] => {
+    
+    let commonElement = new Set<number>()
+
+    for(let i =0; i<arr1.length; i++){
+        commonElement.add(arr1[i])
+    }
+    for(let i= 0; i<arr2.length; i++){
+        commonElement.add(arr2[i])
+    }
+    return[...commonElement]
+}
+// const akm : number [] = [1,3,5,5,5,6,2]
+// const groga : number [] = [1,3,6,5,5,2]
+// console.log(getIntersection(akm, groga))
